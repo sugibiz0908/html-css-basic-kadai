@@ -1,0 +1,67 @@
+h1,p,body {
+  margin: 0;
+}
+p,a {
+  font-size: 20px;
+}
+h1 {
+  margin-bottom: 20px;
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+main{
+  margin: 10px;
+}
+#parent {
+  display: flex;
+  justify-content: space-around;
+}
+.contents{
+  border: solid 3px rgb(238, 204, 204);
+  margin: 10px 15px;
+  padding: 20px 0;
+  text-align: center;
+  flex-basis: 25%;
+}
+h2{
+  font-size: 25px;
+  border-bottom:3px dotted rgb(236, 122, 122);
+}
+h2::before{
+  content: "●";
+  color: rgb(239, 111, 139);
+}
+div p:nth-of-type(2)::first-letter{
+  color: rgb(97, 206, 249);
+  font-weight: bold;
+}
+.contents img {
+  margin: 10px 0;
+  width: 70%;
+}
+footer{
+  background-color: rgb(244, 79, 79);
+  text-align: center;
+}
+a{
+  color: rgb(255, 255, 255);
+}
+a:hover{
+  color: rgb(245, 178, 168);
+}
+a:visited{
+  color: rgb(193, 234, 251);
+}
+@media screen and (max-width: 768px) {
+  /* ここに通常のCSSを書きます。以下は一例です */
+  h2{
+    font-size: 30px;
+  }
+  p{
+    font-size: 25px;
+  }
+  #parent{
+    display: block;
+  }
+}
